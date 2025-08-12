@@ -12,7 +12,7 @@ import random
 app = Flask(__name__)
 
 # Configuration
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 OPENROUTER_MODEL = "mistralai/mistral-7b-instruct"
 
